@@ -1,0 +1,47 @@
+body{
+    background-image: url('../cssimages/hornybackground2.jpg');
+    background-size: cover;
+    background-position-x: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.hoveddiv{
+    padding: 5px;
+    padding-left: 90px;
+    padding-right: 90px;
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    margin-top: 100px;
+    border: 1px solid #616161;
+    background-color: #f7f7f3;
+    border-style: groove;
+    border-radius: 25px;
+    box-shadow: 1px 1px 2px black, 0 0 25px grey, 0 0 5px darkgray;;
+}
+a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 30%;
+  }
+  
+a:hover, a:active {
+    background-color: red;
+}
+button{
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border: 0;
+}
+button:hover{
+    background-color: red;
+}

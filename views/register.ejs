@@ -1,0 +1,84 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link href="../public/assets/register.css" rel="stylesheet" type="text/css" />
+    <title>Register</title>
+</head>
+<body>
+    <header>
+        <div style="width: 100%; background-color: beige; height: 100px;">
+            <div style="height: 100px;"><img src="../public/cssimages/logo.png" alt="logo" style="max-height: 100px;"></div>
+        </div>
+    </header>
+<body>
+    <section>
+        <form id="form" method="POST">
+            <div class="hoveddiv">
+                <h1>Register</h1>
+                <div>
+                    <p>Name</p>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <p>Age</p>
+                    <input type="text" id="age" name="age" required>
+                </div>
+                <div>
+                    <p>Partners age should be:</p>
+                    <input type="number" id="age" placeholder="From" name="interrestedagefrom" required>
+                    <input type="number" id="age" placeholder="To" name="interrestedageto" required>
+                </div>
+                <div>
+                    <p>Your Gender</p>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <p>Interrested in:</p>
+                    <input type="radio" id="male" name="interrestedgender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="interrestedgender" value="female">
+                    <label for="female">Female</label>
+                </div>
+                <div>
+                    <p>Your Height</p>
+                    <input type="radio" id="160" name="height" value="160">
+                    <label for="160">Under 160cm</label>
+                    <br>
+                    <input type="radio" id="160180" name="height" value="160180">
+                    <label for="160180">Between 160 and 180cm</label>
+                    <br>
+                    <input type="radio" id="180" name="height" value="180">
+                    <label for="180">Over 180cm</label>
+                </div>
+                <div>
+                    <p>Partners Height Must Be:</p>
+                    <input type="radio" id="160" name="heightint" value="160">
+                    <label for="160">Under 160cm</label>
+                    <br>
+                    <input type="radio" id="160180" name="heightint" value="160180">
+                    <label for="160180">Between 160 and 180cm</label>
+                    <br>
+                    <input type="radio" id="180" name="heightint" value="180">
+                    <label for="180">Over 180cm</label>
+                </div>
+                <div>
+                    <p>Email</p>
+                    <input type="text" id="email" name="email" required>
+                </div>
+                <div>
+                    <p>Password</p>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <br>
+                <button type="submit" name="Submit" href= "login.html">Register</button>
+                <br>
+                <a href="/login">Already have an account? Log In!</a>
+            </div>
+        </form>
+    </section>
+</body>
+
+</html>

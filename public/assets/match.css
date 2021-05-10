@@ -1,0 +1,24 @@
+body{
+    background-image: url('../cssimages/hornybackground2.jpg');
+    background-size: cover;
+    background-position-x: center;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.matchesdiv{
+    width: 35%;
+    height: 500px;
+    border: 1px solid black ;
+    display: inline-block;
+    background-color: white;
+}
+.likebtn{
+    background-color: #00ff40;
+    color: white;
+}
+.dislikebtn{
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,55 @@
+<html>
+<head>
+    <link href="../public/assets/index.css" rel="stylesheet" type="text/css" />
+    <title>Horny - Home</title>
+</head>
+<body>
+    <header style="padding-bottom: 20px;">
+        <div style="width: 100%; background-color: beige; height: 100px;">
+            <div style="height: 100px;"><img src="/public/cssimages/logo.png" alt="logo" style="max-height: 100px;"></div>
+        </div>
+    </header>
+    <section>
+        <div style="border: 1px solid #616161; border-radius: 25px; text-align: center; position: relative; width: 50%; display: inline-block; background-color: white; margin-bottom: 10px;">
+            <h1>Welcome <%= name %>!</h1>
+            <div style="height: 200px; width: 200px; display: inline-block;">
+                <img src="<%= picture %>" alt="You have no profile picture, please add one in 'Uptade your profile picture'" style="max-width: 100%; border-radius: 25px;">
+            </div><br>
+            <div style="display: inline-block;">
+                <form action="/pictureuptade" enctype="multipart/form-data" method="POST">
+                    <div>
+                        <p>Update your profile picture</p>
+                        <input type="file" name="UserFile" required>
+                    </div>
+                    <button type="submit">Update</button>
+                </form>
+            </div><br>
+            <h3 style="display: inline-block;">Age: </h3> <p style="display: inline-block;"> <%= age %> Years</p><br>
+            <h3 style="display: inline-block;">Gender: </h3> <p style="display: inline-block;"> <%= gender %></p><br>
+            <h3 style="display: inline-block;">Your Height: </h3> <p style="display: inline-block;"> <%= height %></p><br>
+            <h3 style="display: inline-block;">Your Partners Height Should be: </h3> <p style="display: inline-block;"> <%= interrested %></p><br>
+            <h3 style="display: inline-block;">Your Partners Age should be: </h3> <p style="display: inline-block;"> Between <%= interrestedagefrom %> and <%= interrestedageto %> Years</p><br>
+            <form action="/match" method="POST">
+                <button type="submit">Let's find your match!</button>
+            </form>
+            <a href="/viewdeletematches">View and Delete Your Matches!</a><br><br>
+            <a href="/updateprofile">Update Profile</a><br><br>
+            <a href="/adminpage">Admin Page</a><br><br>
+            <div style="display: inline-block;">
+                <div style="float: left;">
+                    <form action="/logout?_method=DELETE" method="POST">
+                        <button type="submit">Log Out</button>
+                    </form>
+                </div>
+                <div style="float: left;">
+                    <form action="/deleteuser" method="POST">
+                        <button type="submit">Delete My User</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+</body>
+</html>

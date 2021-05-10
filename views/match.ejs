@@ -1,0 +1,39 @@
+<html>
+<head>
+    <link href="/public/assets/match.css" rel="stylesheet" type="text/css" />
+    <title>Horny</title>
+</head>
+<body>
+    <header>
+        <div style="width: 100%; background-color: beige; height: 100px;">
+            <div style="height: 100px;"><img src="/public/cssimages/logo.png" alt="logo" style="max-height: 100px;"></div>
+        </div>
+    </header>
+    <section>
+        <div>
+            <h1>Hi</h1>
+            <h2>For the ones who attract you, click on the green button</h2>
+            <h2>For the ones who don't attract you, click on the red button</h2>
+            <h2>If you also attract them, we will tell you!</h2>
+            <a href="/">Go back to your profile!</a>
+        </div>
+    </section>
+    <section>
+        <h1> Possibilities </h1>
+        <div class = "matchesdiv">
+            <div style="width: 50%; height: 400px; display: inline-block;"><img src="<%= picture  %>" alt="pic" style="max-width: 100%; border-radius: 25px; padding-top: 20%;"></div>
+            <h3 style="padding: 0; margin: 10px;"><%= name  %>, <%= age %></h3>
+            <div>
+                <form action="/like" method="POST">
+                    <input type="hidden" name="id" value='<%= id  %>'>
+                    <div style="float: left; padding-left: 150px;"><button class="likebtn">Like</button></div>
+                </form>
+                <form action="/dislike" method="POST">
+                    <input type="hidden" name="id" value="<%= id  %>">
+                    <div style="float: right; padding-right: 150px;"><button class="dislikebtn">Disike</button></div>
+                </form>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

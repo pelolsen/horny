@@ -1,15 +1,15 @@
 {
-    "server": "@@@@.database.windows.net",
+    "server": "datingserverpatty.database.windows.net",
     "authentication": {
         "type": "default",
         "options": {
-            "userName": "@@@@",
-            "password": "@@@@"
+            "userName": "pelolsen",
+            "password": "Patrick09"
         }
     },
     "options": {
         "encrypt": true,
-        "database": "@@@@"
+        "database": "dattingdabase"
     }
 }
 

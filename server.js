@@ -218,7 +218,7 @@ app.post('/like', checkAuthenticated, async (req,res) => {
         likesToDB(id, likes);
         let match = await test_match(id, likes)
         console.log(match);
-        if(match == 1){
+        if(match == true){
             await matchesToDB(id, likes)
             res.render('itsamatch.ejs')
         } else{

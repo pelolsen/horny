@@ -8,6 +8,9 @@ const getFromDB = (email) => {
     })
     return fetchedData;
 }
+
+module.exports = getFromDB;
+//---------------------TEST------------------
 /*
 async function test(email){
     try{
@@ -22,7 +25,6 @@ async function test(email){
 let userbro= test('p@p')
 console.log(userbro);// output: Promise {<pending>}
 */
-module.exports = getFromDB;
 /*
 async function test(email){
     let user = ""

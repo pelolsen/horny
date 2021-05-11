@@ -24,9 +24,10 @@ async function returnpossibility(id, height, interrested, interrestedgender, int
         return array
     }    
 }
-//returnpossibility(1, 180, 160180, 'female', 20, 30, 20);
 module.exports.returnpossibility = returnpossibility;
+//---------------------TEST------------------
 /*
+//returnpossibility(1, 180, 160180, 'female', 20, 30, 20);
 async function showperson(id, height, interrested, interrestedgender){
     const possibilityarray = await returnpossibility(id, height, interrested, interrestedgender)
     //console.log(possibilityarray)
@@ -42,16 +43,16 @@ async function showperson(id, height, interrested, interrestedgender){
 }
 
 async function testfunc() {
-    const virkerlortet = await showperson(1, 180, 160180, 'female')
-    console.log(virkerlortet);
+    const testing = await showperson(1, 180, 160180, 'female')
+    console.log(testing);
 }
 
 testfunc()
 
 /*
 async function testfunc() {
-    const virkerlortet = await returnpossibility(1, 180, 160180, 'female')
-    console.log(virkerlortet[1].id);
+    const testing = await returnpossibility(1, 180, 160180, 'female')
+    console.log(testing[1].id);
 }
 
 testfunc()

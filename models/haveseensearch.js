@@ -9,6 +9,7 @@ function haveseensearch(user_id, have_seen_id){
     return fetchedData;
 }
 module.exports = haveseensearch
+//---------------------TEST------------------
 /*
 async function testfunc() {
     try{

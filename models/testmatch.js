@@ -22,36 +22,3 @@ async function matchTester(user_id, likes){
     }    
 }
 module.exports = matchTester;
-/*
-function testMatch(user_id, likes){
-    fetch(`http://localhost:7071/api/likes?user_id=${likes}&likes=${user_id}`)
-    .then(
-        function(response){
-            if (response.status !== 200){
-                console.log("no match for you")
-            } else{
-                fetch("http://localhost:7071/api/", {
-                    method: 'POST',
-                    body: JSON.stringify({
-                        user_id,
-                        match: likes
-                    }), 
-                    headers: {
-                        "Content-Type": "application/json; charset-UTF-8"
-                    }
-                })
-                .then((response) => {
-                    return response.json()
-                })
-                .then((data) => {
-                    console.log(data)
-                }).catch((err) =>{
-                    console.log(err)
-                }) 
-            }
-        }
-    )
-}
-
-module.exports = testMatch;
-*/

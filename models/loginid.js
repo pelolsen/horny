@@ -10,6 +10,8 @@ const getIDFromDB = (id) => {
       return fetchedData;
 }
 
+module.exports = getIDFromDB;
+//---------------------TEST------------------
 /*
 async function test(id){
     try{
@@ -23,9 +25,7 @@ async function test(id){
 }
 let userbro= test(1)
 console.log(userbro);// output: Promise {<pending>}
-*/
-module.exports = getIDFromDB;
-/*
+
 function getFromDBid(id){
     const fetchedData = fetch(`http://localhost:7071/api/user?email=${id}`)
     .then(
